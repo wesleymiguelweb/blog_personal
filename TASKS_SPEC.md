@@ -48,6 +48,10 @@
 - [x] Commit e push para GitHub.
 - [ ] Deploy na Vercel (pendente de importação via dashboard).
 
+## Fase 9 — Evidências (imagens)
+- [x] `docs/EVIDENCE.md` — tabela descritiva das imagens.
+- [x] `docs/evidence/` — screenshots do app (Home, Post, busca, loading), Lighthouse, Issues do GitHub.
+
 ## Fase 8 — Deploy (pendente)
 - [ ] Importar repo no dashboard da Vercel.
 - [ ] Validar URL de produção.
