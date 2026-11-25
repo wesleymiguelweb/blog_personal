@@ -15,7 +15,6 @@ export function IssueCard({ issue }: Props) {
       <Link
         to={`/post/${issue.number}`}
         className="block h-full rounded-card bg-card-soft border border-border p-5 sm:p-6 transition-colors hover:border-accent focus:outline-none focus:ring-2 focus:ring-accent"
-        aria-label={`Ler post: ${issue.title}`}
       >
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-base sm:text-lg font-bold leading-snug line-clamp-2 group-hover:text-accent transition-colors">

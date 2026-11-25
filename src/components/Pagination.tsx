@@ -21,7 +21,7 @@ export function Pagination({ page, hasNext, hasPrev, onPrev, onNext, loading }: 
       >
         ← Anterior
       </button>
-      <span className="text-sm text-text-dim" aria-live="polite">
+      <span className="text-sm text-text-dim" aria-live="polite" aria-current="page">
         Página {page}
       </span>
       <button

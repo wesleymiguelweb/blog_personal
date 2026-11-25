@@ -18,7 +18,7 @@ export function Post() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="mx-auto w-full max-w-[864px] px-4 sm:px-0 pb-16 mt-8 sm:mt-10">
+      <main id="main-content" className="mx-auto w-full max-w-[864px] px-4 sm:px-0 pb-16 mt-8 sm:mt-10">
         {state.status === 'loading' && <LoadingState label="Carregando post…" />}
 
         {state.status === 'error' && (
@@ -32,7 +32,6 @@ export function Post() {
                 type="button"
                 onClick={() => navigate(-1)}
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-accent hover:underline focus:outline-none focus:ring-2 focus:ring-accent rounded"
-                aria-label="Voltar"
               >
                 <ArrowLeft size={14} aria-hidden="true" />
                 Voltar
@@ -42,7 +41,6 @@ export function Post() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-accent hover:underline focus:outline-none focus:ring-2 focus:ring-accent rounded"
-                aria-label="Ver no GitHub"
               >
                 Ver no GitHub
                 <ExternalLink size={14} aria-hidden="true" />

@@ -43,7 +43,7 @@ export function Home() {
       )}
       {userState.status === 'success' && <ProfileCard user={userState.data} />}
 
-      <main className="mx-auto w-full max-w-[864px] px-4 sm:px-0 pb-16 mt-8 sm:mt-10">
+      <main id="main-content" className="mx-auto w-full max-w-[864px] px-4 sm:px-0 pb-16 mt-8 sm:mt-10">
         <SearchBar
           value={query}
           onChange={(v) => {
